@@ -5,7 +5,7 @@ from datetime import datetime
 
 
 
-
+ 
 def is_prime(number, primes):
     max_value_that_you_need_to_check = int(1 + math.sqrt(len(primes)))
     for i in range(0,max_value_that_you_need_to_check):
@@ -58,6 +58,7 @@ def main():
         time.sleep(1)
         print(".")
         time.sleep(2)
+
         for i in primes:
             print(i)
             time.sleep(0.1)
@@ -112,7 +113,7 @@ def main():
             if(d1==d2):
                 balanced_primes.append(primes[i])
 
-        print("Done! Here are the balanced primes", end = '')
+        print("Done! Here are the balanced primes:")
         time.sleep(2)
         print(".", end='')
         time.sleep(1)
@@ -126,6 +127,6 @@ def main():
             print(i)
     
     
-    print("Done.")
+    print("\n\n End of program. Have a good day :)")
 
 main()
